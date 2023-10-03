@@ -2,21 +2,29 @@
 
 //https://kotlinlang.org/docs/numbers.html#floating-point-types
 
-var x = 5
+var x: Number = 5
+
+x = 5.5
+
+x = "Test"
+
+
+
+
+//x = null
 
 x
-
 
 x = 666
 
 x
 
 
-// x = "test"
+x = 777
 
-var y = "null"
+var y: String? = null
 
-y
+//y
 
 
 
@@ -40,6 +48,8 @@ On platforms other than the JVM (like Kotlin/JS or Kotlin/Native), the represent
  * */
 
 
-var y: () -> Unit = { println("Lambda called!") }
-y()
+var y1: () -> Unit = {}
+y1()
 
+
+var x2 = null

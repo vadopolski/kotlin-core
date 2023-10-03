@@ -2,29 +2,36 @@
 // 1 var: Mutable variable.
 var x = 5
 
-x
-
-x = 10
-
-x
+//x
+//
+//x = 10
+//
+//x
 
 // 2 val: Immutable (read-only) variable.
-val y: String = "Hello, Kotlin"
+val y: String = "Hello, Kotlin" // new object
 
-//y = "Change me"
+y // use object
+
+// y = "Change me"
+
+//private const val test = ""
+
 
 
 // 4
-fun greet() = "Hello"
+fun greet() = throw Exception()
 
-println(greet())  // Prints "Hello, Alice"
-
+println(greet())  //  new object
+println(greet())  //  new object
+println(greet())  //  new object
 
 
 
 // 3 lazy val
-val test: Int by lazy { 9 }
+val test by lazy { 9 } //
 
-test
+test // new object
+test // use object
 
 

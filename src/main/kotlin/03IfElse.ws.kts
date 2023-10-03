@@ -28,6 +28,33 @@ when (value) {
     else -> println("Value is not 1, 2, or 3")
 }
 
+
+// Ranges
+// A range including the final value 9
+(0..9).toList()
+
+// A range excluding the final value 10
+(0 until 10).toList()
+
+// An inclusive range with an increment of 2
+(0..10 step 2).toList()
+
+// An inclusive range in descending order with a decrement of 2
+(10 downTo 0 step 2).toList()
+
+
+// Infix notation
+class Example {
+    infix fun add(number: Int): Int {
+        return this.add(number)
+    }
+}
+
+val example = Example()
+val result = example add 5
+
+
+
 val x = 25
 
 when {
@@ -36,6 +63,8 @@ when {
     x > 20 -> println("x is greater than 20")
     else -> println("None of the above")
 }
+
+
 
 val y = 5
 val result = when (y) {
