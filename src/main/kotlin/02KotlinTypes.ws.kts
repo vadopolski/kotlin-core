@@ -6,7 +6,7 @@ var x: Number = 5
 
 x = 5.5
 
-x = "Test"
+//x = "Test"
 
 
 

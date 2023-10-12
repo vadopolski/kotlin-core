@@ -20,11 +20,11 @@ y // use object
 
 
 // 4
-fun greet() = throw Exception()
-
-println(greet())  //  new object
-println(greet())  //  new object
-println(greet())  //  new object
+//fun greet() = throw Exception()
+//
+//println(greet())  //  new object
+//println(greet())  //  new object
+//println(greet())  //  new object
 
 
 

@@ -12,5 +12,14 @@ public class Test {
 
 
 
+
+        if (1 > 2 && 4 > 5) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+
+
+
     }
 }

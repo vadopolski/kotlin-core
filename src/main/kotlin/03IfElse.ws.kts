@@ -1,15 +1,37 @@
 // Control flow
 
-val number = 10
+val number = 10 - 6
 
+number
 
-val result1 = if (number < 5) {
+val booleanVar = number < 5
+
+if (number >= 5) {
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
+    println("Number is less than 5")
     println("Number is less than 5")
 } else {
     println("Number is greater than 5")
 }
 
-result1
+//result1
+
+val result2 = if (booleanVar) "Number is less than 5" else "Number is greater than 5"
+//println(result2)
+
+
 
 if (number < 5) {
     println("Number is less than 5")
@@ -25,48 +47,60 @@ when (value) {
     1 -> println("Value is 1")
     2 -> println("Value is 2")
     3 -> println("Value is 3")
+    4 -> println("Value is 4")
     else -> println("Value is not 1, 2, or 3")
 }
 
+val result4 = when (value) {
+    1    -> "Value is 1"
+    2    -> "Value is 2"
+    3    -> "Value is 3"
+    4    -> "Value is 4"
+    else -> "Value is not 1, 2, or 3" }
 
-// Ranges
-// A range including the final value 9
+println(result4)
+
+//// Ranges
 (0..9).toList()
+('a'..'z').toList()
 
-// A range excluding the final value 10
 (0 until 10).toList()
 
-// An inclusive range with an increment of 2
 (0..10 step 2).toList()
 
-// An inclusive range in descending order with a decrement of 2
 (10 downTo 0 step 2).toList()
 
 
-// Infix notation
+//// Infix notation
 class Example {
-    infix fun add(number: Int): Int {
-        return this.add(number)
+    var number = 0
+
+    infix fun add(number: Int): Example {
+        this.number += number
+        return this
     }
 }
 
 val example = Example()
-val result = example add 5
+val exResult = example add 5 add 10 add 15
 
-
+println(exResult.number)
+val result8888 = example.add(5).add(10).add(15)
+println(result8888.number)
 
 val x = 25
 
 when {
-    x in 1..10 -> println("x is in the range from 1 to 10")
+    x in 1..10  -> println("x is in the range from 1 to 10")
     x in 11..20 -> println("x is in the range from 11 to 20")
-    x > 20 -> println("x is greater than 20")
-    else -> println("None of the above")
+    x > 20      -> println("x is greater than 20")
+    else        -> println("None of the above")
 }
 
 
 
 val y = 5
+
 val result = when (y) {
     1 -> "one"
     2 -> "two"
