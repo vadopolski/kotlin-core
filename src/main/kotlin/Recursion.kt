@@ -1,6 +1,5 @@
 object Recursion {
 
-
     tailrec fun sum(n: Int): Int = if (n == 1) 1 else n + sum(n - 1)
 //    sun(5) = 5 + sum(4)
 //    sum(4) = 4 + sum(3)
